@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.container {
+    width: 380px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 18px 0px;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+    flex-wrap: wrap;
+}
+
+.title h3 {
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    font-variant: small-caps;
+}
+
+.title h3 span {
+    text-shadow: -5px -1.5px 12px #6b6b6b;
+    font-size: 60px;
+}
+
+.main-content,
+.content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 40px 0;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    .result-div {
+        margin: 20px 0px;
+    }
+}
+
+.content {
+    margin: 5px 0 0;
+}
+
+.main-content .info,
+.timing-content {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4f4f4f;
+}
+
+.timing-content {
+    float: right;
+    width: 68px;
+    height: 28px;
+    display: flex;
+    background-color: rgb(152, 228, 241);
+    border-radius: 20px;
+    font-size: 14px;
+    margin: -10px -12px 10px 0;
+}
+
+.note-points {
+    margin: 12px 5px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 18px;
+    border-radius: 10px;
+}
+
+.note-points ol {
+    font-family: "PT Sans", serif;
+    font-size: 13px;
+    font-weight: 100;
+    word-spacing: 1px;
+    font-style: normal;
+}
+
+.btn {
+    margin: 20px 0px;
+    width: 280px;
+}
+
+.btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #404a44;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: #868686;
+    color: #000;
+}
+
+.btn button:focus {
+    width: 100%;
+}
+
+.question-box {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-box p {
+    font-size: 15px;
+    font-weight: 800;
+    word-spacing: 0.8px;
+}
+
+.options-box {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.options-box label {
+    width: 100%;
+    background-color: #5a5a5a;
+    margin: 3px;
+    height: 30px;
+    text-align: justify;
+    padding: 0 20px;
+    border-radius: 20px;
+    padding-top: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.options-box label:hover {
+    background-color: #222;
+}
+
+.options-box label input {
+    margin: 0 10px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 0px 10px;
+}
+
+.btn1 input[type=submit] {
+    width: 80px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.btn1 input[type=submit]:hover {
+    background-color: #b1b1b1;
+    color: #000;
+}
+
+.options-box label:focus {
+    background-color: #323232;
+}
+
+.timing-content img {
+    mix-blend-mode: darken;
+    margin: 4px 0 0 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.timing-content div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 3px;
+}
+
+.quiz-complete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    flex-direction: column;
+}
+
+.comlpete-title {
+    font-size: 19px;
+    font-weight: 800;
+    padding: 5px 15px;
+    font-variant: small-caps;
+    border-bottom: 1px solid #000;
+    border-radius: 12px;
+    background: linear-gradient(#fff, #fefefe, #b4b4b4, #8b8b8b);
+    color: #141414;
+}
+
+.result-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 30px;
+    width: 100%;
+}
+
+.result-div label {
+    font-size: 17px;
+}
+
+legend {
+    padding: 0 3px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
