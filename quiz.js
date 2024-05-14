@@ -300,12 +300,15 @@ try {
             var findselected = document.querySelector("input[name='option']:checked");
             for (i = 0; i < 4; i++) {
                 if (currentQuestion.Answers[i].correct) {
-                    if (findselected.value == currentQuestion.Answers[i].text) {
+                    if (findselected === null) {
+                        break;
+                    }
+                    else if (findselected.value == currentQuestion.Answers[i].text) {
                         console.log(findselected.value === currentQuestion.Answers[i].text)
                         score = score + 1;
                         console.log(score)
                     }
-                    else{
+                    else {
                         console.log(findselected.value === currentQuestion.Answers[i].text)
                         score = score - 0.5;
                         console.log(score)
@@ -318,7 +321,7 @@ try {
 
             if (questionArray.length != questionNo) {
                 selected();
-                count=31;
+                count = 31;
                 changeQuestion = questions();
             }
             else {
@@ -358,7 +361,7 @@ try {
         if (count == 1) {
             if (questionArray.length != questionNo) {
                 selected();
-                count=31;
+                count = 31;
                 nextQuestion = questions();
             }
             if (questionArray.length == questionNo) {
