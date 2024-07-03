@@ -13,7 +13,22 @@
 
 <body>
 
-    <section class="container">
+    <div class="loader" id="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        <div class="bar7"></div>
+        <div class="bar8"></div>
+        <div class="bar9"></div>
+        <div class="bar10"></div>
+        <div class="bar11"></div>
+        <div class="bar12"></div>
+    </div>
+
+    <section class="container" id="container">
         <div class="title">
             <h3><span>Q</span>uiz contesnt</h3>
         </div>
@@ -35,6 +50,27 @@
         </main>
 
     </section>
+
+    <script>
+        var loader = document.getElementById("loader");
+        var container = document.getElementById("container");
+
+        const preLoader = () => {
+            loader.style.display = "block";
+            container.style.display = "none";
+            hidePreLoader();
+        }
+
+        const hidePreLoader = () => {
+            setTimeout(() => {
+                loader.style.display = "none";
+                container.style.display = "block";
+            }, 3000);
+        }
+
+        preLoader();
+    </script>
+
     <script src="quiz.js"></script>
 </body>
 
